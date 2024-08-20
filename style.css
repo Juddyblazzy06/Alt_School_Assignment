@@ -95,8 +95,9 @@
 
 
 body{
-    font-family: Arial, sans-serif;
+    
     background-color: #8dcd8f;
+    font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .tab{
     padding: 20;
