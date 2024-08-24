@@ -64,9 +64,7 @@
     .vid{
         width: 100%;
         height: auto; 
-    }
-    
-    
+    } 
 }
 /*.image {
     display: flex;
@@ -98,9 +96,11 @@ body{
     
     background-color: #8dcd8f;
     font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
 }
 .tab{
-    padding: 20;
+    padding: 20px;
 }
 .responsive-table{
     width: 100%;
@@ -128,6 +128,8 @@ button{
     cursor: pointer;
     margin-bottom: 10px;
     margin-top: 10px;
+    width: 40%;
+    background-color: rgb(46, 46, 235);
 }
 .head {
     text-align: center;
@@ -138,11 +140,35 @@ button{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 40%;
+    border-radius: 5px;
+}
+.input:hover{
+    background-color: rgb(207, 197, 197);
 }
 hr{
     border: 3px solid rgb(65, 63, 63);
     border-style: dashed;
-    /*margin-left: 45%;
-    margin-right: 45%;*/
+    margin-left: 0;
+    margin-right: 0;
 
+}
+.nav{
+    display: flex;
+    justify-content:space-between;
+    background-color: #120b18;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+}
+.nav a:hover{
+    color: yellowgreen;
+}
+.form{
+    margin-left: 10px;
 }
