@@ -19,10 +19,11 @@
         height: auto;
     }
 
-    .responsive-table {
-        width: 100%;
+    .nav {
+        width: 360px;
         height: auto;
     }
+
 
 }
 
@@ -37,13 +38,8 @@
         height: auto;
     }
 
-    .responsive-table {
-        width: 100%;
-        height: auto;
-    }
-
     .nav {
-        width: 100px;
+        width: 480px;
         height: auto;
     }
 
@@ -61,13 +57,8 @@
         height: auto;
     }
 
-    .responsive-table {
-        width: 100%;
-        height: auto;
-    }
-
     .nav {
-        width: 100px;
+        width: 720px;
         height: auto;
     }
 
@@ -85,13 +76,8 @@
         height: auto;
     }
 
-    .responsive-table {
-        width: 100%;
-        height: auto;
-    }
-
     .nav {
-        width: 100px;
+        width: 1024px;
         height: auto
     }
 
@@ -109,10 +95,6 @@
         height: auto;
     }
 
-    .responsive-table {
-        width: 100%;
-        height: auto;
-    }
 }
 
 /*.image {
@@ -139,11 +121,6 @@
     margin: 30px;
     
   }**/
-.responsive-table {
-    margin: 0 10px 0px 10px;
-    background-color: antiquewhite;
-}
-
 
 body {
 
@@ -155,16 +132,6 @@ body {
 
 .tab {
     padding: 20px;
-}
-
-.responsive-table {
-    width: 100%;
-    height: 70vh;
-    border: 2px solid #7d7676;
-}
-
-.data {
-    border: 2px solid #7d7676;
 }
 
 
@@ -240,14 +207,79 @@ hr {
     margin-left: 10px;
 }
 
-.flex {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    margin: 0 20px 0 20px;
+
+
+
+
+
+
+.data {
+    border: 2px solid #7d7676;
+}
+.dat {
+    border: 2px solid #7d7676;
+    text-align: center;
 }
 
-.flex:first-child {
-    background-color: aliceblue;
-    width: 30%;
-}
+
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    height: 70vh;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+  }
+  
+  /* Table Header Styling */
+  .responsive-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .responsive-table, 
+    .responsive-table tbody, 
+    .responsive-table tr, 
+    .responsive-table td, 
+    .responsive-table th {
+      display: block; /* Display elements as block */
+    }
+  
+    .responsive-table thead {
+      display: none; /* Hide the table headers */
+    }
+  
+    .responsive-table tr {
+      margin-bottom: 15px; /* Add space between rows */
+      border-bottom: 1px solid #ddd; /* Add border for clarity */
+    }
+  
+    .responsive-table td {
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+      border: none; /* Remove original borders */
+      border-bottom: 1px solid #eee; /* Add bottom border */
+    }
+  
+    .responsive-table td::before {
+      content: attr(data-label); /* Label text before each cell */
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left; /* Align label text to the left */
+      background-color: #f9f9f9; /* Light background color */
+    }
+  }
