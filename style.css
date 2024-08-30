@@ -178,7 +178,6 @@ hr {
     border-style: dashed;
     margin-left: 0;
     margin-right: 0;
-
 }
 
 .nav {
@@ -215,10 +214,13 @@ hr {
 
 .data {
     border: 2px solid #7d7676;
+   
 }
-.dat {
+#dat {
     border: 2px solid #7d7676;
     text-align: center;
+    background-color: rgb(232, 114, 71);
+   
 }
 
 
@@ -236,12 +238,12 @@ hr {
   .responsive-table td {
     padding: 12px 15px;
     border: 1px solid #ddd;
-    background-color: #f2f2f2;
+    background-color: #aae2d7;
   }
   
   /* Table Header Styling */
   .responsive-table th {
-    background-color: #f2f2f2;
+    background-color: #afe18f;
     font-weight: bold;
   }
   
@@ -270,6 +272,7 @@ hr {
       text-align: left;
       border: none; /* Remove original borders */
       border-bottom: 1px solid #eee; /* Add bottom border */
+      background-color: #cad012;
     }
   
     .responsive-table td::before {
@@ -280,6 +283,16 @@ hr {
       padding-left: 15px;
       font-weight: bold;
       text-align: left; /* Align label text to the left */
-      background-color: #f9f9f9; /* Light background color */
+      background-color: #91d012; /* Light background color */
     }
+  }
+
+
+
+  .responsive-image img {
+    border-radius: 50px;
+    size: 100px;
+  }
+  .responsive-image td {
+    margin: 20px;
   }
