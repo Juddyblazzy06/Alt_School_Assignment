@@ -155,7 +155,7 @@ button {
     cursor: pointer;
     margin-bottom: 10px;
     margin-top: 10px;
-    width: 40%;
+    width: 50%;
     background-color: rgb(46, 46, 235);
 }
 
@@ -168,7 +168,7 @@ button {
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
 }
 
@@ -288,6 +288,31 @@ hr {
       text-align: left; /* Align label text to the left */
       background-color: #91d012; /* Light background color */
     }
+    .input {
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .btn {
+        padding: 10px;
+        background-color: none;
+        color: black;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 95%;
+        background-color: rgb(46, 46, 235);
+    }
+    #fig {
+        font-style: italic;
+        text-align:center;
+        color: gold;
+      }
+    
   }
 
 
@@ -299,3 +324,10 @@ hr {
   .responsive-image td {
     margin: 20px;
   }
+
+  figcaption {
+    font-style: italic;
+    text-align: right;
+    color: gold;
+  }
+  
